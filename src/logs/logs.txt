@@ -1,0 +1,9 @@
+====================ERROR 26/9/2023, 20:58:12=========================
+{"status":400,"error":"Incorrect password","message":"The password does not match with the user"}
+
+====================ERROR 26/9/2023, 20:58:18=========================
+{"status":400,"error":"User does not exist mid","message":"You need register before login"}
+
+====================ERROR 26/9/2023, 20:58:26=========================
+{"expose":true,"statusCode":400,"status":400,"body":"{\n    \"email\": \"ian.rosas6@academlo.com\",\n}","type":"entity.parse.failed"}
+
