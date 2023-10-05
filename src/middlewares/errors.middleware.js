@@ -6,18 +6,32 @@ const {
   ValidationError,
   DatabaseError,
 } = require("sequelize");
+const dayjs = require("dayjs");
 
 // necesitamos un middleware para mostrar errores en la consola (log errors)
 
+const getError = (req, err, res) => {
+  const { body, url, method } = req;
+  console.log(body);
+  const formatBody = body ? JSON.stringify(body) : null;
+  const { status, ...error } = err;
+  return (
+    `req: ${method} ${url} body: ${formatBody} \nres: status: ${status}, ${JSON.stringify(
+      error
+    )} ` + "\n\n"
+  );
+};
+
 const errorLogger = (err, req, res, next) => {
   const date = new Date().toLocaleString();
+  const current = dayjs().format("YYYY-MM-DD");
   console.log(err); // mostrar la fecha y hora en la que sucedio el error
-  const filePath = path.join(__dirname, "../logs/logs.txt");
+  const filePath = path.join(__dirname, `../logs/${current}-logs.txt`);
   fs.appendFile(
     filePath,
     `====================ERROR ${date}=========================\n`
   );
-  fs.appendFile(filePath, JSON.stringify(err) + "\n\n");
+  fs.appendFile(filePath, getError(req, err, res));
   next(err);
 };
 
@@ -50,6 +64,18 @@ const ormErrorHandler = (err, req, res, next) => {
   next(err);
 };
 
+const jwtErrorHandler = (err, req, res, next) => {
+  const jwtErrors = ["TokenExpiredError", "JsonWebTokenError"];
+
+  if (jwtErrors.includes(err.name)) {
+    return res.status(401).json({
+      error: err.name,
+      message: err.message,
+    });
+  }
+  next(err);
+};
+
 // error
 // {status, error, message}
 const errorHandler = (err, req, res, next) => {
@@ -67,6 +93,7 @@ const notFoundErrorHandler = (req, res) => {
 module.exports = {
   errorLogger,
   ormErrorHandler,
+  jwtErrorHandler,
   errorHandler,
   notFoundErrorHandler,
 };

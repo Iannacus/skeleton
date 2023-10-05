@@ -13,10 +13,11 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      // models: {User, Conversation, Message}
+      // models: {User, Conversation, Message, Participant}
       User.hasMany(models.Message, { foreignKey: "senderId" });
       User.hasMany(models.Conversation, { foreignKey: "createdBy" });
-      User.belongsToMany(models.Conversation, { through: "Participant" });
+      User.belongsToMany(models.Conversation, { through: "Participant" }); // joins salen muy facil
+      User.hasMany(models.Participant, { foreignKey: "UserId" }); // hacer los joins es muy complejo
     }
   }
   User.init(

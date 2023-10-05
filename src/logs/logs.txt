@@ -7,3 +7,297 @@
 ====================ERROR 26/9/2023, 20:58:26=========================
 {"expose":true,"statusCode":400,"status":400,"body":"{\n    \"email\": \"ian.rosas6@academlo.com\",\n}","type":"entity.parse.failed"}
 
+====================ERROR 27/9/2023, 19:32:33=========================
+{"status":400,"error":"Incorrect password","message":"The password does not match with the user"}
+
+{}
+
+====================ERROR 27/9/2023, 20:48:38=========================
+====================ERROR 27/9/2023, 20:50:50=========================
+{"name":"SequelizeDatabaseError","parent":{"length":199,"name":"error","severity":"ERROR","code":"42703","hint":"Probablemente quiera hacer referencia a la columna «Participant.conversationId».","position":"38","file":"parse_relation.c","line":"3656","routine":"errorMissingColumn","sql":"SELECT \"senderId\", \"conversationId\", \"ConversationId\", \"UserId\" FROM \"Participants\" AS \"Participant\" WHERE \"Participant\".\"ConversationId\" = 3 AND \"Participant\".\"UserId\" IN (20);"},"original":{"length":199,"name":"error","severity":"ERROR","code":"42703","hint":"Probablemente quiera hacer referencia a la columna «Participant.conversationId».","position":"38","file":"parse_relation.c","line":"3656","routine":"errorMissingColumn","sql":"SELECT \"senderId\", \"conversationId\", \"ConversationId\", \"UserId\" FROM \"Participants\" AS \"Participant\" WHERE \"Participant\".\"ConversationId\" = 3 AND \"Participant\".\"UserId\" IN (20);"},"sql":"SELECT \"senderId\", \"conversationId\", \"ConversationId\", \"UserId\" FROM \"Participants\" AS \"Participant\" WHERE \"Participant\".\"ConversationId\" = 3 AND \"Participant\".\"UserId\" IN (20);","parameters":{}}
+
+====================ERROR 29/9/2023, 17:25:42=========================
+{"status":400,"error":"User does not exist mid","message":"You need register before login"}
+
+====================ERROR 29/9/2023, 17:26:04=========================
+{"status":400,"error":"Incorrect password","message":"The password does not match with the user"}
+
+====================ERROR 29/9/2023, 17:26:36=========================
+{"status":401,"error":"Email verification needed","message":"Look at your email messages for a verification email"}
+
+====================ERROR 29/9/2023, 17:26:38=========================
+{"status":401,"error":"Email verification needed","message":"Look at your email messages for a verification email"}
+
+====================ERROR 29/9/2023, 20:49:48=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 29/9/2023, 20:49:48=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 29/9/2023, 20:50:00=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 29/9/2023, 20:50:00=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 29/9/2023, 20:53:36=========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-09-30T00:27:21.000Z"}
+
+====================ERROR 29/9/2023, 20:54:46=========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-09-30T00:27:21.000Z"}
+
+====================ERROR 29/9/2023, 20:54:46=========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-09-30T00:27:21.000Z"}
+
+====================ERROR 29/9/2023, 20:54:57=========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-09-30T00:27:21.000Z"}
+
+====================ERROR 29/9/2023, 20:54:57=========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-09-30T00:27:21.000Z"}
+
+====================ERROR 29/9/2023, 21:26:51=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 14:41:16=========================
+{"status":400,"error":"Invalid data","message":["La propiedad email no tiene el formato de correo"]}
+
+====================ERROR 2/10/2023, 14:41:32=========================
+{"status":400,"error":"Invalid data","message":["La propiedad email no tiene el formato de correo"]}
+
+====================ERROR 2/10/2023, 14:42:06=========================
+{"status":400,"error":"Invalid data","message":["La propiedad email no tiene el formato de correo"]}
+
+====================ERROR 2/10/2023, 15:19:35=========================
+{"status":400,"error":"Invalid data","message":["La propiedad email no tiene el formato de correo"]}
+
+====================ERROR 2/10/2023, 15:21:21=========================
+{"status":400,"error":"Invalid data","message":["La propiedad email no tiene el formato de correo"]}
+
+====================ERROR 2/10/2023, 15:24:06=========================
+{"status":400,"error":"Invalid data","message":["La propiedad email no tiene el formato de correo"]}
+
+====================ERROR 2/10/2023, 15:24:09=========================
+{"status":400,"error":"Invalid data","message":["La propiedad email no tiene el formato de correo"]}
+
+====================ERROR 2/10/2023, 15:24:21=========================
+{"status":400,"error":"Incorrect password","message":"The password does not match with the user"}
+
+====================ERROR 2/10/2023, 15:25:08=========================
+{"status":400,"error":"Incorrect password","message":"The password does not match with the user"}
+
+====================ERROR 2/10/2023, 15:29:18=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:29:18=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:29:43=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:29:43=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:29:45=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:29:45=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:29:45=========================
+{"status":401,"message":"No authorization header"}
+
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:29:45=========================
+====================ERROR 2/10/2023, 15:30:26=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:30:26=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:31:06=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:31:06=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:34:28=========================
+{"status":400,"error":"Invalid data","message":["La propiedad email no tiene el formato de correo"]}
+
+====================ERROR 2/10/2023, 15:34:39=========================
+{"status":400,"error":"Incorrect password","message":"The password does not match with the user"}
+
+====================ERROR 2/10/2023, 15:34:48=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:34:48=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:34:48=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:34:48=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:36:02=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:36:02=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:36:02=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:36:02=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:37:36=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:37:36=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:37:36=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:37:36=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:38:44=========================
+{"status":400,"error":"Incorrect password","message":"The password does not match with the user"}
+
+====================ERROR 2/10/2023, 15:39:01=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:39:01=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:39:01=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:39:01=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:40:06=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:40:06=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:40:06=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:40:06=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:41:03=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:41:03=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:41:03=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:41:03=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:42:03=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:42:03=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:42:03=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:42:03=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:44:16=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:44:16=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:44:16=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:44:16=========================
+{"status":401,"message":"No authorization header"}
+
+====================ERROR 2/10/2023, 15:53:20=========================
+{"status":400,"error":"Incorrect password","message":"The password does not match with the user"}
+
+====================ERROR 2/10/2023, 15:58:50=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 15:58:50=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 15:58:50=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 15:58:50=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 15:59:16=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 15:59:16=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 15:59:16=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 15:59:16=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 16:05:24=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 16:05:24=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 16:05:24=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 16:05:24=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 16:05:31=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 16:05:31=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 16:05:31=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 16:05:31=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 16:06:42=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 16:06:42=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 16:06:42=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 16:06:42=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 16:07:13=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 16:07:13=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 16:07:13=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+
+====================ERROR 2/10/2023, 16:07:13=========================
+{"name":"JsonWebTokenError","message":"invalid signature"}
+

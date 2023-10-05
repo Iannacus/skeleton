@@ -9,7 +9,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      senderId: {
+      UserId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
@@ -17,7 +17,7 @@ module.exports = {
           key: "id",
         },
       },
-      conversationId: {
+      ConversationId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {

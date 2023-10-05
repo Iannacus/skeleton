@@ -4,6 +4,19 @@ const jwt = require("jsonwebtoken");
 const { signAuthToken } = require("../../helpers/signToken");
 require("dotenv").config();
 
+const getAllUsers = async (req, res, next) => {
+  try {
+    const users = await User.findAll({
+      attributes: {
+        exclude: ["password"],
+      },
+    });
+    res.json(users);
+  } catch (error) {
+    next(error);
+  }
+};
+
 const registerUser = async (req, res, next) => {
   try {
     const newUser = req.body;
@@ -85,10 +98,32 @@ const validateUserEmail = async (req, res, next) => {
   }
 };
 
+const uploadAvatar = async (req, res, next) => {
+  try {
+    const { file } = req;
+    const { id } = req.params;
+    // construir una url para la imagen
+    // http://localhost:8001/avatars/1696388259083-2fcf7e1c3e57d993a11f90046a3c9fa6.jpg
+    // https://lñsadkjfklsadfjadslkf.fl0.com/avatars/1696388259083-2fcf7e1c3e57d993a11f90046a3c9fa6.jpg
+    const imageUrl = `${process.env.APP_URL}/avatar/${file.filename}`;
+    await User.update(
+      { avatar: imageUrl },
+      {
+        where: { id },
+      }
+    );
+    res.status(204).end();
+  } catch (error) {
+    next(error);
+  }
+};
+
 module.exports = {
   registerUser,
   loginUser,
   validateUserEmail,
+  getAllUsers,
+  uploadAvatar,
 };
 
 // 1.- Enviar un correo electronico a la direccion que nos dieron (link)

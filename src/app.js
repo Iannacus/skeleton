@@ -1,8 +1,9 @@
 // import express from 'express';
+const path = require("node:path");
 const express = require("express"); // cjs -common java script
 const morgan = require("morgan");
 const cors = require("cors");
-const userRoutes = require("./modules/user/user.routes");
+const apiv1Routes = require("./routes/apiv1.routes");
 const errorRoutes = require("./routes/error.routes");
 require("dotenv").config();
 
@@ -14,12 +15,13 @@ app.use(cors());
 app.use(morgan("tiny"));
 app.use(express.json());
 
+app.use("/avatar", express.static(path.join(__dirname, "../public")));
+
 app.get("/", (req, res) => {
   res.send("ok");
 });
 
-app.use(userRoutes);
-
+apiv1Routes(app);
 errorRoutes(app);
 
 app.listen(PORT, () => {

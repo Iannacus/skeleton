@@ -3,6 +3,7 @@ require("dotenv").config();
 
 const authenticate = (req, res, next) => {
   try {
+    console.log(req.headers);
     const authorization = req.headers.authorization;
 
     if (!authorization) {

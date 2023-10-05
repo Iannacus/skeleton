@@ -1,0 +1,100 @@
+====================ERROR 2/10/2023, 17:11:17=========================
+req: POST /api/v1/users/login body: {"password":"wreasdf","email":"qsdad"} 
+res: status: 400, {"error":"Invalid data","message":["La propiedad email no tiene el formato de correo"]} 
+
+====================ERROR 2/10/2023, 19:41:55=========================
+req: POST /api/v1/messages/conversation/2 body: {"content":"shalalalalala","senderId":1} 
+res: status: undefined, {"name":"SequelizeForeignKeyConstraintError","parent":{"length":306,"name":"error","severity":"ERROR","code":"23503","detail":"La llave (conversationId)=(2) no está presente en la tabla «Conversations».","schema":"public","table":"Messages","constraint":"Messages_conversationId_fkey","file":"ri_triggers.c","line":"2596","routine":"ri_ReportViolation","sql":"INSERT INTO \"Messages\" (\"id\",\"content\",\"senderId\",\"conversationId\",\"createdAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"content\",\"senderId\",\"conversationId\",\"createdAt\";","parameters":["shalalalalala",1,"2","2023-10-03 01:41:55.309 +00:00"]},"original":{"length":306,"name":"error","severity":"ERROR","code":"23503","detail":"La llave (conversationId)=(2) no está presente en la tabla «Conversations».","schema":"public","table":"Messages","constraint":"Messages_conversationId_fkey","file":"ri_triggers.c","line":"2596","routine":"ri_ReportViolation","sql":"INSERT INTO \"Messages\" (\"id\",\"content\",\"senderId\",\"conversationId\",\"createdAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"content\",\"senderId\",\"conversationId\",\"createdAt\";","parameters":["shalalalalala",1,"2","2023-10-03 01:41:55.309 +00:00"]},"sql":"INSERT INTO \"Messages\" (\"id\",\"content\",\"senderId\",\"conversationId\",\"createdAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"content\",\"senderId\",\"conversationId\",\"createdAt\";","parameters":["shalalalalala",1,"2","2023-10-03 01:41:55.309 +00:00"],"fields":null} 
+
+====================ERROR 2/10/2023, 19:42:31=========================
+req: POST /api/v1/messages/conversation/2 body: {"content":"shalalalalala","senderId":1} 
+res: status: 401, {"message":"No authorization header"} 
+
+====================ERROR 2/10/2023, 20:36:58=========================
+req: GET /api/v1/users body: {} 
+res: status: undefined, {"name":"JsonWebTokenError","message":"jwt malformed"} 
+
+====================ERROR 2/10/2023, 20:36:58=========================
+req: GET /api/v1/conversations/6 body: {} 
+res: status: undefined, {"name":"JsonWebTokenError","message":"jwt malformed"} 
+
+====================ERROR 2/10/2023, 20:36:58=========================
+req: GET /api/v1/users body: {} 
+res: status: undefined, {"name":"JsonWebTokenError","message":"jwt malformed"} 
+
+====================ERROR 2/10/2023, 20:36:58=========================
+req: GET /api/v1/conversations/6 body: {} 
+res: status: undefined, {"name":"JsonWebTokenError","message":"jwt malformed"} 
+
+====================ERROR 2/10/2023, 21:57:18=========================
+req: GET /api/v1/users body: {} 
+res: status: undefined, {"name":"JsonWebTokenError","message":"invalid signature"} 
+
+====================ERROR 2/10/2023, 21:57:18=========================
+req: GET /api/v1/users body: {} 
+res: status: undefined, {"name":"JsonWebTokenError","message":"invalid signature"} 
+
+====================ERROR 2/10/2023, 21:57:18=========================
+req: GET /api/v1/conversations/5 body: {} 
+res: status: undefined, {"name":"JsonWebTokenError","message":"invalid signature"} 
+
+====================ERROR 2/10/2023, 21:57:18=========================
+req: GET /api/v1/conversations/5 body: {} 
+res: status: undefined, {"name":"JsonWebTokenError","message":"invalid signature"} 
+
+====================ERROR 2/10/2023, 22:07:47=========================
+req: GET /api/v1/users body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:02:16.000Z"} 
+
+====================ERROR 2/10/2023, 22:07:47=========================
+req: GET /api/v1/conversations/6 body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:02:16.000Z"} 
+
+====================ERROR 2/10/2023, 22:22:14=========================
+req: GET /api/v1/messages/conversation/10 body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:02:16.000Z"} 
+
+====================ERROR 2/10/2023, 22:22:14=========================
+req: GET /api/v1/users body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:02:16.000Z"} 
+
+====================ERROR 2/10/2023, 22:22:14=========================
+req: GET /api/v1/conversations/6 body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:02:16.000Z"} 
+
+====================ERROR 2/10/2023, 22:22:14=========================
+req: GET /api/v1/users body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:02:16.000Z"} 
+
+====================ERROR 2/10/2023, 22:22:14=========================
+req: GET /api/v1/messages/conversation/10 body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:02:16.000Z"} 
+
+====================ERROR 2/10/2023, 22:22:14=========================
+req: GET /api/v1/conversations/6 body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:02:16.000Z"} 
+
+====================ERROR 2/10/2023, 22:22:17=========================
+req: GET /api/v1/messages/conversation/10 body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:02:16.000Z"} 
+
+====================ERROR 2/10/2023, 22:22:17=========================
+req: GET /api/v1/users body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:02:16.000Z"} 
+
+====================ERROR 2/10/2023, 22:22:17=========================
+req: GET /api/v1/conversations/6 body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:02:16.000Z"} 
+
+====================ERROR 2/10/2023, 22:22:17=========================
+req: GET /api/v1/users body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:02:16.000Z"} 
+
+====================ERROR 2/10/2023, 22:22:17=========================
+req: GET /api/v1/messages/conversation/10 body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:02:16.000Z"} 
+
+====================ERROR 2/10/2023, 22:22:17=========================
+req: GET /api/v1/conversations/6 body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:02:16.000Z"} 
+

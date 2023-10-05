@@ -9,12 +9,16 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Participant.belongsTo(models.User, { foreignKey: "UserId" });
+      Participant.belongsTo(models.Conversation, {
+        foreignKey: "ConversationId",
+      });
     }
   }
   Participant.init(
     {
-      senderId: DataTypes.INTEGER,
-      conversationId: DataTypes.INTEGER,
+      UserId: DataTypes.INTEGER,
+      ConversationId: DataTypes.INTEGER,
     },
     {
       sequelize,
